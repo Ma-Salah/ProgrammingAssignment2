@@ -1,4 +1,5 @@
 makeCacheMatrix <- function(x = matrix()) {
+  #This function makes a cache matrix
   s <- NULL
   set <- function(y) {
     x <<- y
@@ -13,6 +14,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 cacheSolve <- function(x, ...) {
+  #this function return the solved matrix
   s <- x$getsolve()
   if(!is.null(s)){
     message(" getting cached data")
